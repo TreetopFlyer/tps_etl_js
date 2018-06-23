@@ -11,10 +11,13 @@ var pg = require('pg');
 var server = express();
 server.engine('handlebars', handlebars());
 server.set('view engine', 'handlebars');
-
+server.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 var Postgres = new pg.Client({
-    
     user: process.env.user,
     password: process.env.password,
     host: process.env.host,
@@ -22,7 +25,7 @@ var Postgres = new pg.Client({
     database: process.env.database,
     application_name: "tps_etl_api",
     ssl: true
-})
+});
 
 Postgres.connect();
 
@@ -166,10 +169,9 @@ server.use("/import", upload.single('upload'), function (inReq, inRes) {
     console.log("should have gotten file as post body here");
     var csv = inReq.file.buffer.toString('utf8')
     // create a new converter object
-    var c2j = require('csvtojson');
-    //var jobj = c2j.fromString(csv).
+    //var jobj = csvtojson.fromString(csv).
     //{headers: "true", delimiter: ",", output: "jsonObj", flatKeys: "true"}
-    c2j({ flatKeys: "true" }).fromString(csv).then(
+    csvtojson({ flatKeys: "true" }).fromString(csv).then(
         (x) => {
             //console.log(x);
             //inRes.json(x);
@@ -199,7 +201,7 @@ server.use("/import", upload.single('upload'), function (inReq, inRes) {
         );
         }
         //const jsonArray = csv().fromFile(csvFilePath);
-        //c2j({ output: "csv" }).fromString(csv).then((jsonObj) => { console.log(jsonObj) });
+        //csvtojson({ output: "csv" }).fromString(csv).then((jsonObj) => { console.log(jsonObj) });
         //validate the body contents before pushing to sql?
     );
     }
@@ -213,10 +215,9 @@ server.use("/csv_suggest", upload.single('upload'), function (inReq, inRes) {
     console.log("should have gotten file as post body here");
     var csv = inReq.file.buffer.toString('utf8')
     // create a new converter object
-    var c2j = require('csvtojson');
-    //var jobj = c2j.fromString(csv).
+    //var jobj = csvtojson.fromString(csv).
     //{headers: "true", delimiter: ",", output: "jsonObj", flatKeys: "true"}
-    c2j({ flatKeys: "true" }).fromString(csv).then(
+    csvtojson({ flatKeys: "true" }).fromString(csv).then(
         (x) => {
             //console.log(x);
             //inRes.json(x);
@@ -244,7 +245,7 @@ server.use("/csv_suggest", upload.single('upload'), function (inReq, inRes) {
             //console.log(sql);
         }
         //const jsonArray = csv().fromFile(csvFilePath);
-        //c2j({ output: "csv" }).fromString(csv).then((jsonObj) => { console.log(jsonObj) });
+        //csvtojson({ output: "csv" }).fromString(csv).then((jsonObj) => { console.log(jsonObj) });
         //validate the body contents before pushing to sql?
     );
     }
