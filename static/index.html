@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-cookies.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
+        <script src="/static/papa.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+
+        <div ng-app="DatApp" ng-controller="DatAppController" ng-cloak class="container">
+
+
+            <div class="row">
+                <form class="well">
+                    <div class="form-group">
+                        <button class="btn btn-primary" ng-click="save();">Save</button>
+                        <button class="btn btn-primary" ng-click="load();">Load</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row">
+                <form ng-submit="add();" class="well">
+                    <div class="form-group">
+                        <label>name</label>
+                        <input class="form-control" type="text" ng-model="currentName">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary">new one</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row">
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="member in members">
+                        <span>name:</span><strong ng-bind="member.name"></strong>
+                        <button class="btn btn-danger" ng-click="remove(member);">remove</button>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+
+        <script>
+            var DatApp;
+            DatApp = angular.module("DatApp", []);
+            DatApp.controller("DatAppController", ["$scope", "$http", function(inScope, inHTTP){
+                
+                inScope.currentName = "name";
+                inScope.randomize = function(){
+                    inScope.message = Math.random();
+                };
+                inScope.members = [];
+                inScope.add = function(){
+                    inScope.members.push({
+                        name: inScope.currentName,
+                        id: Math.floor(Math.random()*10000000)
+                    });
+                };
+                inScope.remove = function(inMember){
+                    var i;
+                    for(i=0; i<inScope.members.length; i++)
+                    {
+                        if(inScope.members[i] === inMember){
+                            inScope.members.splice(i, 1);
+                            return;
+                        }
+                    }
+                };
+
+                inScope.save = function(){
+                    inHTTP({
+                        method:"POST",
+                        url:"/data",
+                        data:inScope.members
+                    })
+                    .then(function(inSuccess){
+                        console.log("done")
+                    }, function(inFailure){
+                        console.log(inFailure);
+                    });
+                };
+                inScope.load = function(){
+                    inHTTP({
+                        method:"GET",
+                        url:"/data"
+                    })
+                    .then(function(inSuccess){
+                        inScope.members = inSuccess.data;
+                        console.log("done");
+                    }, function(inFailure){
+                        console.log(inFailure);
+                    });
+                };
+
+            }]);
+        </script>
+
+    </body>
+</html>

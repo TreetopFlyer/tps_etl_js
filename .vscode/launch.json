@@ -1,0 +1,26 @@
+{
+	"version": "0.1.0",
+	"configurations": [
+        {
+            "name": "Node Start",
+            "type": "node",
+            "program": "${workspaceRoot}/index.js",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": null,
+            "env": {
+                "NODE_ENV": "developement"
+            }
+        },
+        {
+            "name": "Mocha Test",
+            "type": "node",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": null,
+            "env": {
+                "NODE_ENV": "testing"
+            }
+        }]
+}

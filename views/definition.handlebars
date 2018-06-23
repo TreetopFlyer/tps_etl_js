@@ -1,0 +1,149 @@
+<div ng-app="App" ng-controller="AppController">
+    <form ng-submit="Submit()">
+        <input type="text" ng-model="Model.name"/>
+        <input type="text" ng-model="Model.description"/>
+        <h2>Rows</h2>
+        <div ng-repeat="Row in Model.schema track by $index">
+            <input type="text" ng-model="Row.key"/>
+            <select ng-model="Row.type" ng-options="v for v in Types"></select>
+        </div>
+        <input type="submit"/>
+    </form>
+    <form>
+        <input type="file" data-import-csv class="form-control">
+    </form>
+</div>
+<script>
+var App = angular.module("App", []);
+App.factory("Rows", [function()
+{
+    return function(inData)
+    {
+        console.log(inData);
+    };
+}]);
+App.directive("importCsv", ["Rows", function(Rows)
+{
+
+    var directive = {};
+
+    directive.link = function(inScope, inElement, inAttributes){
+
+        function handlerEnter(inEvent){
+            if(inEvent){
+                inEvent.preventDefault();
+            }
+            inElement.addClass("Import");
+            inEvent.dataTransfer.effectAllowed = 'copy';
+            return false;
+        }
+        
+        function handlerDrop(inEvent){
+            inElement.removeClass("Import");
+            if(inEvent){
+                inEvent.preventDefault();
+            }
+            parse(event.dataTransfer.files[0]);
+            return false;
+        }
+        
+        function handlerChange(inEvent){
+            inEvent.stopImmediatePropagation();
+            parse(inEvent.target.files[0]);
+        }
+        
+        
+        function handlerLeave()
+        {
+            inElement.removeClass("Import");
+        }
+        
+        function parse(inFile)
+        {
+            Papa.parse(inFile, {
+                complete: function(inCSV)
+                {
+                    Rows(inCSV.data);
+                    inScope.$apply();
+                }
+            });
+        }
+
+        
+        inElement.on("dragenter dragstart dragend dragleave dragover drag drop", function (inEvent) {inEvent.preventDefault();});
+        inElement.on('dragenter', handlerEnter);
+        inElement.on('dragleave', handlerLeave);
+        inElement.on('drop', handlerDrop);
+        inElement.on('change', handlerChange);
+        inElement.on('click', function(inEvent){
+            inEvent.stopImmediatePropagation();
+            
+        })
+    };
+    return directive;
+}]);
+App.controller("AppController", ["$scope", "$http", function($scope, $http)
+{
+    console.log("init");
+    $scope.Types = ["date", "text", "numeric"];
+    $scope.Model = {
+        "name": "DCARD",
+        "description":"Discover Card",
+        "type": "csv",
+        "schema": [
+            {
+                "key": "Trans. Date",
+                "type": "date"
+            },
+            {
+                "key": "Post Date",
+                "type": "date"
+            },
+            {
+                "key": "Description",
+                "type": "text"
+            },
+            {
+                "key": "Amount",
+                "type": "numeric"
+            },
+            {
+                "key": "Category",
+                "type": "text"
+            }
+        ],
+        "unique_constraint": {
+            "type": "key",
+            "fields": [
+                "{Post Date}",
+                "{Trans. Date}",
+                "{Description}"
+            ]
+        }
+    };
+    $scope.Submit = function()
+    {
+        console.log($scope.Model);
+
+    var req = {
+    method: 'POST',
+    url: '/json',
+    data: $scope.Model
+    };
+
+    $http(req).then(
+        function(inSuccess){
+            console.log(inSuccess);
+        },
+        function(inFailure)
+        {
+            console.log(inFailure);
+        }
+    );
+
+    };
+}]);
+
+
+
+</script>
