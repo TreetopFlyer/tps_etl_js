@@ -11,11 +11,15 @@ var pg = require('pg');
 var server = express();
 server.engine('handlebars', handlebars());
 server.set('view engine', 'handlebars');
-server.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
+
+server.use(function(inReq, inRes, inNext)
+{
+    inRes.header("Access-Control-Allow-Origin", "*");
+    inRes.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE, OPTIONS");
+    inRes.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    inNext();
 });
+
 
 var Postgres = new pg.Client({
     user: process.env.user,
@@ -26,133 +30,59 @@ var Postgres = new pg.Client({
     application_name: "tps_etl_api",
     ssl: true
 });
-
+Postgres.FirstRow = function(inSQL, inResponse)
+{
+    Postgres.query(inSQL, (err, res) => {
+        if (err === null)
+        {
+            inResponse.json(res.rows[0]);
+            return;
+        }
+        inResponse.json(err.message);
+    });
+};
 Postgres.connect();
 
-//-------------------------------------------------------------list source--------------------------------------------------------------------------
 
-server.use("/srce_list", function (inReq, inRes) {
-
-    var sql = "SELECT jsonb_agg(defn) source_list FROM tps.srce"
-    console.log(sql);
-
-    Postgres.query(sql, (err, res) => {
-        inRes.json(res.rows[0]);
-        console.log("source list request complete");
-    });
-}
-);
+server.get("/source", function (inReq, inRes)
+{
+    var sql = "SELECT jsonb_agg(defn) source_list FROM tps.srce";
+    Postgres.FirstRow(sql, inRes);
+});
+server.post("/source", bodyParser.json(), function (inReq, inRes)// remove body parsing, just pass post body to the sql string build
+{
+    var sql = "SELECT x.message FROM tps.srce_set($$" + JSON.stringify(inReq.body) + "$$::jsonb) as x(message)";
+    Postgres.FirstRow(sql, inRes);
+});
 
 //-------------------------------------------------------------list maps--------------------------------------------------------------------------
+server.get("/map_list", function (inReq, inRes)
+{
+    var sql = "SELECT jsonb_agg(regex) regex FROM tps.map_rm";
+    Postgres.FirstRow(sql, inRes);
+});
 
-server.use("/map_list", function (inReq, inRes) {
+//list unmapped items flagged to be mapped   ?srce=
+server.get("/unmapped", function (inReq, inRes)
+{
+    var sql = "SELECT jsonb_agg(row_to_json(x)::jsonb) regex FROM tps.report_unmapped_recs('"+ inReq.query.srce + "') x";
+    Postgres.FirstRow(sql, inRes);
+});
 
-    var sql = "SELECT jsonb_agg(regex) regex FROM tps.map_rm"
-    console.log(sql);
 
-    Postgres.query(sql, (err, res) => {
+//set one or more map definitions
+server.post("/mapdef_set", bodyParser.json(), function (inReq, inRes)
+{
+    var sql = "SELECT x.message FROM tps.srce_map_def_set($$" + JSON.stringify(inReq.body) + "$$::jsonb) as x(message)";
+    Postgres.FirstRow(sql, inRes);
+});
 
-        if (err === null) {
-            inRes.json(res.rows[0]);
-            return;
-        }
-        inRes.json(err.message);
-    });
-}
-);
-
-//--------------------------------------------------------list unmapped items flagged to be mapped---------------------------------------------------
-
-server.use("/unmapped", function (inReq, inRes) {
-
-    var sql = "SELECT jsonb_agg(row_to_json(x)::jsonb) regex FROM tps.report_unmapped_recs('";
-    sql += inReq.query.srce + "') x"
-    console.log(sql);
-
-    Postgres.query(sql, (err, res) => {
-
-        if (err === null) {
-            inRes.json(res.rows[0]);
-            return;
-        }
-        inRes.json(err.message);
-    });
-}
-);
-
-//-------------------------------------------------------------set source via json in body--------------------------------------------------------------------------
-
-server.use("/srce_set", bodyParser.json(), function (inReq, inRes) {
-    
-    //validate the body contents before pushing to sql?
-    var sql = "SELECT x.message FROM tps.srce_set($$";
-    sql += JSON.stringify( inReq.body);
-    sql += "$$::jsonb) as x(message)";
-    console.log(sql);
-
-    Postgres.query(sql, (err, res) => {
-
-        //Postgres.end();
-
-        if (err === null) {
-            inRes.json(res.rows[0]);
-            return;
-        }
-        inRes.json(err.message);
-        //handle error
-    });
-}
-);
-
-//-------------------------------------------------------------set one or more map definitions--------------------------------------------------------------------------
-
-server.use("/mapdef_set", bodyParser.json(), function (inReq, inRes) {
-
-    //validate the body contents before pushing to sql?
-    var sql = "SELECT x.message FROM tps.srce_map_def_set($$";
-    sql += JSON.stringify( inReq.body);
-    sql += "$$::jsonb) as x(message)";
-    console.log(sql);
-
-    Postgres.query(sql, (err, res) => {
-
-        //Postgres.end();
-
-        if (err === null) {
-            inRes.json(res.rows[0]);
-            return;
-        }
-        inRes.json(err.message);
-        //handle error
-    });
-
-}
-);
-
-//-------------------------------------------------------------add entries to lookup table--------------------------------------------------------------------------
-
-server.use("/mapval_set", bodyParser.json(), function (inReq, inRes) {
-
-    //validate the body contents before pushing to sql?
-    var sql = "SELECT x.message FROM tps.map_rv_set($$";
-    sql += JSON.stringify( inReq.body);
-    sql += "$$::jsonb) as x(message)";
-    console.log(sql);
-
-    Postgres.query(sql, (err, res) => {
-
-        //Postgres.end();
-
-        if (err === null) {
-            inRes.json(res.rows[0]);
-            return;
-        }
-        inRes.json(err.message);
-        //handle error
-    });
-
-}
-);
+//add entries to lookup table
+server.post("/mapval_set", bodyParser.json(), function (inReq, inRes)
+{
+    var sql = "SELECT x.message FROM tps.map_rv_set($$" + JSON.stringify( inReq.body) + "$$::jsonb) as x(message)";
+    Postgres.FirstRow(sql, inRes);
+});
 
 /*
 send a csv with powershell:
@@ -252,8 +182,9 @@ server.use("/csv_suggest", upload.single('upload'), function (inReq, inRes) {
 );
 
 
-    server.get("/", function (inReq, inRes) {
-        inRes.render("definition", { title: "definition", layout: "main" });
-    })
+server.get("/", function (inReq, inRes)
+{
+    inRes.render("definition", { title: "definition", layout: "main" });
+});
 
-    module.exports = server;
+module.exports = server;
