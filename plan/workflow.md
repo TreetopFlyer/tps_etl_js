@@ -1,5 +1,15 @@
 
-## source maintenanc
+## workflow overview
+* initial setup
+    1. create a source
+    2. run import
+    3. setup regex
+    4. map all regex
+* on-going usage
+    1. run import
+    2. address any new unmapped items
+
+## source maintenance
 
 ```
  source maintenance
@@ -10,7 +20,7 @@
 |                                                                                                                |
 |  existing sources         source name                                                                          |
 |  +-------------+          +---------------+                                                                    |
-|  |dcard        |          |dcard          |                                                                    |
+|  |dcard        |          |tb:dcard       |                                                                    |
 |  |hunt         |          +---------------+                                                                    |
 |  |pncc         |          data source                                                                          |
 |  |paycom       |          +---------------+                                                                    |
