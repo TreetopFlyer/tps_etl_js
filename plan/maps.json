@@ -1,0 +1,4299 @@
+[
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DISCOUNT DRUG MART 3"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Discount Drug Mart",
+            "reason": "groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TARGET STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Target",
+            "reason": "groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CIRCLE K 05416 STOW "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Circle K",
+            "reason": "gasoline"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TARGET.COM * 800-591"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Target",
+            "reason": "home supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BESTBUYCOM8055267948"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "BestBuy",
+            "reason": "home supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BUFFALO WILD WINGS K"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Buffalo Wild Wings",
+            "reason": "restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CASHBACK BONUS REDEM"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Discover Card",
+            "reason": "financing"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CLE CLINIC PT PMTS 2"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Cleveland Clinic",
+            "reason": "medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WWW.KOHLS.COM #0873 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Kohls",
+            "reason": "clothes"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARATHON PETRO73601 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marathon",
+            "reason": "gasoline"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "L A SHISH GRILL STOW"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "La Shish",
+            "reason": "restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "OFFICEMAX/OFFICE DEP"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Office Max",
+            "reason": "home supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SP * ERIKTHEFLUTEMAK"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Erik The Flutemaker",
+            "reason": "gifts"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SQ *SUGAR RUSH KENT "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sugar Rush",
+            "reason": "restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MINIMUM INTEREST CHA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Discover Card",
+            "reason": "fees"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CASH ADVANCE FEE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Discover Card",
+            "reason": "fees"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUMMIT CO PARKING GA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Summit County Parking Garage",
+            "reason": "civic duty"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AUTOZONE #1941 STREE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Autozone",
+            "reason": "auto maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "THE KENT STAGE KENT "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "The Kent Stage",
+            "reason": "gifts"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MSFT *AZURE 800-642-"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Azure",
+            "reason": "recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHIPOTLE ONLINE 303-"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chipotle",
+            "reason": "restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DIVERSIFIED MINI STO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Diversified Tree Farm",
+            "reason": "recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GOOGLE *YOUTUBE VIDE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Youtube",
+            "reason": "recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHIPOTLE 1115 STREET"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chipotle",
+            "reason": "restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHILDRENS HOSPITAL M"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Akron Children's Hospital",
+            "reason": "medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BATH & BODY WORKS.CO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bath and Body Works",
+            "reason": "home supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "IN *MR. BULKY'S FOOD"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Mr. Bulky's",
+            "reason": "recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BP#954778736210 7-EL"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "BP",
+            "reason": "gasoline"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GOOGLE *ASCIIFLOW.CO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "ASCII Flow",
+            "reason": "recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MSFT * E04004X603 80"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Microsoft",
+            "reason": "home supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BIG LOTS #00453 STOW"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Big Lots",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ACME NO. 17 STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Acme",
+            "reason": "groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AT&T *PAYMENT 800-28"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "AT&T",
+            "reason": "internet"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AUTOZONE #0722 STOW "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Autozone",
+            "reason": "auto maint"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "1794MOTHERHOOD #1794"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Motherhood",
+            "reason": "Clothes"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "3 PALMS HUDSON OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "province": "Ohio",
+            "city": "Hudson",
+            "reason": "Restaurante",
+            "party": "3 Palms"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "36241 7-ELEVEN STOW "
+        },
+        "source": "dcard",
+        "mapped": {
+            "province": "Ohio",
+            "city": "Stow",
+            "reason": "Gasoline",
+            "party": "7-Eleven"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "7-ELEVEN 36241 STOW "
+        },
+        "source": "dcard",
+        "mapped": {
+            "province": "Ohio",
+            "city": "Stow",
+            "reason": "Gasoline",
+            "party": "7-Eleven"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "98626 - 200 PUBLIC S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Public Square Parking Garage",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ACE HARDWARE HUDSON "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Ace Hardware",
+            "reason": "Home Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ACH CAFE AND STARBUC"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Starbucks",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ACME FRESH MARKET UN"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Acme",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ADVANCE AUTO PARTS #"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Advance Auto",
+            "reason": "Auto Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ADY*NETFLIX WWW.NETF"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Netflix",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AIRBNB INC 415-800-5"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Airbnb Inc",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AKRON CHILDRENS HOSP"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Akron Childrens",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AKRON GENERAL MEDICA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Akron General",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AKRON ZOOLOGICAL PAR"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Akron Zoological Park",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AMAZON MKTPLACE PMTS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Amazon",
+            "reason": "Amazon"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AMAZON VIDEO ON DEMA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Amazon Video",
+            "reason": "Amazon"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AMAZON.COM AMZN.COM/"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Amazon",
+            "reason": "Amazon"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ANC*ANCESTRY.COM 800"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Ancestry.com",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "APPLEBEES C942048569"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Applebees",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "APPLEBEES S942049899"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Applebees",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ARBYS #1831 STOW STO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Arbys",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ARBYS 1831 STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Arbys",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ARBYS 2227 PRINCETON"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Arbys",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ARBYS 5355 UNIONTOWN"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Arbys",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ASIAN CHAO FAIRLAWN "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Asian Chao",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ATT*BILL PAYMENT 800"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "AT&T",
+            "reason": "Internet"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AUTOZONE #0723 AKRON"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Autozone",
+            "reason": "Auto Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AUTOZONE #2465 MOUNT"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Autozone",
+            "reason": "Auto Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "AUTOZONE #4506 STOW "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Autozone",
+            "reason": "Auto Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BATH&BODY AKRON OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bath & Body Works",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BATH&BODY STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bath & Body Works",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BATHANDBODYWORKS.COM"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bath & Body Works",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BEDBATH&BEYOND STOW "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bed Bath & Beyond",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BEDBATH&BEYOND#0060 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bed Bath & Beyond",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BEDBATH&BEYOND#0360 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bed Bath & Beyond",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BELLACINOS PIZZA AND"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bellacinos",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BEST BUY 00002782295"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Best Buy",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BESTBUY.COM 888-BEST"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Best Buy",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BESTBUYCOM7424430059"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Best Buy",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BIG DEES TACK STREET"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Big Dees Tack & Supply",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BISTRO ON MAIN KENT "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bistro On Main",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BP#93079431210 BUFFA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "BP",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BP#954635936241 7-EL"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "BP",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BREWSTER'S TWINSBURG"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Brewsters",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BRICCO KENT KENT OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bricco",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BRUEGGERS #209 STOW "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Brueggers Bagels",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BUMP FIRE SYSTEMS MI"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bump Fire Systems",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BURGER KING #14183 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Burger King",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BURGER KING #4422 BR"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Burger King",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BURGER KING #5239 NE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Burger King",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BURGER KING #5811 ST"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Burger King",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BURGERFI CUYAHOGA FA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "BurgerFI",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BV HEGDE,MD 330-6733"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bv Hegde, MD",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BV HEGDE,MD 33067333"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bv Hegde, MD",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "BV HEGDE,MD KENT OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Bv Hegde, MD",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CAFE O PLAY CUYAHOGA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Café O Play",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CAJUN GRILL CLEVELAN"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Cajun Grill",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CARTER'S #907 STOW O"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Carters",
+            "reason": "Clothes"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHARLEYS GRILLED SUB"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Charleys Grilled Subs",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHARLEYS PHILLY STEA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Charleys Philly Steaks",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHICK-FIL-A #01583 C"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chick-Fil-A",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHICK-FIL-A #02197 C"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chick-Fil-A",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHICK-FIL-A #02216 M"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chick-Fil-A",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHICK-FIL-A #02957 M"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chick-Fil-A",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHICK-FIL-A #03447 P"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chick-Fil-A",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHICK-FIL-A #03490 D"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chick-Fil-A",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHILDRENS HOSP ACCOU"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Akron Childrens Hospital",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHIPOTLE 0559 MACEDO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chipotle",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHIPOTLE 1152 STOW O"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chipotle",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHIPOTLE 1216 HUDSON"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chipotle",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHIPOTLE 2027 TWINSB"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Chipotle",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHMCA PARKING LOCUST"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Akron General",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CHMC-ER REGISTRATION"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Akron General",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CITYOFSTOW 330689283"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "City of Stow",
+            "reason": "Sewer"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CITYOFSTOW 402-935-7"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "City of Stow",
+            "reason": "Sewer"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "COLDSTONE #1490 HUDS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Coldstone",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "COLLEGE TRANSCRIPT 7"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Ashland University",
+            "reason": "Continuing Education"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "COOKERY, THE HUDSON "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "The Cookery",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CVS/PHARMACY #04359 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "CVS",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CVS/PHARMACY #06167 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "CVS",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "CVS/PHARMACY #08932 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "CVS",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DAIRY QUEEN #10722 M"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Dairy Queen",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DAIRY QUEEN #17749 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Dairy Queen",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DAIRY QUEEN #18902 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Dairy Queen",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DAIRY QUEEN#12711 AK"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Dairy Queen",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DAVIS EYE CENTER CUY"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Davis Eye Center",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DESTINY RESCUE USA 5"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Destiny Rescue",
+            "reason": "Gift"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DICKS SPORTING GOODS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Dicks Sporting Goods",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DIS*DISNEY MOVIE CLU"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Disney Movie Club",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DISCOUNT DRUG MART 6"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Discount Drug Mart",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DOLLAR GENERAL #1666"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Dollar General",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DOLLAR TREE STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Dollar Tree",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DOLRTREE 23000235568"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Dollar Tree",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DUMA MEATS MOGADORE "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Duma Meats",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DUNKIN #345001 Q35 C"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Dunkin Doughnuts",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DUNKIN #353699 Q35 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Dunkin Doughnuts",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "DURBIN RAILROAD 402-"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Durbin Railroad",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "EARTH N WOOD PRODUCT"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Earht N Wood",
+            "reason": "Home Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "EBAYS HALF.COM SAN J"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Half.Com",
+            "reason": "Education"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ECARDIO DIAGNOSTICS "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Ecardio Diagnostics",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "EDDYS BIKE SHOP STOW"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Eddys Bike Shop",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "EDDY'S DELI & RESTAU"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Eddys Deli & Restaurante",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "EL CAMPESINO STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "El Campesino",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ENTERPRISE 101213580"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Enterprise",
+            "reason": "Auto Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ETSY.COM BROOKL NY"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Etsy.com",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "EXXONMOBIL HILLSVILL"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Exxonmobil",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "EXXONMOBIL SCARBRO W"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Exxonmobil",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "EXXONMOBIL SURF CITY"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Exxonmobil",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "FAMILY VIDEO #348 ST"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Family Video",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "FIVE BELOW 501 STOW "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Five Below",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "FIVE BELOW 501 STOWE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Five Below",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "FIVE GUYS OH 1086 QS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Five Guys",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "FIXEZ 8662336460 NV"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Fixez.com",
+            "reason": "Phone"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "FRACTURED PRUNE SURF"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Fractured Prune",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GANDER MOUNTAIN TWIN"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Gander Mountain",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GET GO #3359 STREETS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Get Go",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GET GO #3396 STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Get Go",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GIANT #4419 KENT OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Giant-Eagle",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GIANT EAGLE #5863 ST"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Giant Eagle",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GIANT-EAGLE #0224 TW"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Giant-Eagle",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GIANT-EAGLE #4032 ST"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Giant-Eagle",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GIANT-EAGLE #4096 ST"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Giant-Eagle",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GITHUB.COM 415448667"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "github.com",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GITHUB.COM 55OO9 415"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "github.com",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GOOGLE *GOOGLE PLAY "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Google Play",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GOOGLE *MEDIOCRE GOO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Google Play",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GOOGLE *MUSIC GOOGLE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Google Play",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GOOGLE *OUTFIT7 GOOG"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Google Play",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GREAT HARVEST BREAD "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Great Harvest Bread",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GREATER CLEVELAND RT"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Greater Cleveland RTA",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GRUBHUBTWISTEDMELTZ "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Twisted Meltz",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GUIDOPIZZA3306785505"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Guidos Pizza",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GUIDOS ORIGINAL PIZZ"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Guidos Pizza",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "GUITAR CENTER #616 F"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Guitar Center",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "HANDELS ICE CREAM ST"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Handles Ice Cream",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "HARTVILLE HARDWARE I"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Hartville Hardware",
+            "reason": "Home Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "HARTVILLE KITCHEN - "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Hartville Kitchen",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "HEGGYS ALLIANCE ALLI"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Heggys",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "HEINENS VILL MKT19 H"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Heinens",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "HOBBY LOBBY #405 STO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Hobby Lobby",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "IKEA HOME SHOPPING B"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Ikea",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ILP*INSECT LORE 800-"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Insect Lore",
+            "reason": "Education"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "IN *FAMILY MEDICAL C"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Family Medical Care",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "INTEREST CHARGE ON P"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Discover Card",
+            "reason": "Financing"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "INTEREST CHARGE REFU"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Discover Card",
+            "reason": "Financing"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "INTERNET PAYMENT - T"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Huntington",
+            "reason": "Financing"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "JAMBERRY NAILS, LLC "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Jamberry Nails",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "JERSEY MIKE'S 2063 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Jersey Mikes",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "JOANN ETC #0171 HUDS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Jo-Ann",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "JUSTICE #0639 STOW O"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Justice",
+            "reason": "Clothes"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "KING DRAGON STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "King Dragon",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "KOHL'S #0235 MACEDON"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Kohls",
+            "reason": "clothing"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "KOHL'S #0331 STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Kohls",
+            "reason": "clothing"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "KSU DINING SERVICES "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "KSU Dining",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LAKE FARMPARK ADMISS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Lake Farmpark",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LATE CHARGE REFUND"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Discover Card",
+            "reason": "Financing"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LATE FEE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Discover Card",
+            "reason": "Financing"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LAZIZA RESTAURANT KE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "La Ziza",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LEMONGRASS GRILLE MU"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Lemongrass Grille",
+            "reason": "Restaurnte"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LITTLE TIKES CO 800-"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Little Tikes",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LOGOS BOOKSTORE KENT"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Logos Bookstore",
+            "reason": "Education"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LOLA BISTRO CLEVELAN"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Lola",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LOVES COUNTRY STORE "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Loves Country Store",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LOWE'S OF MACEDONIA,"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Lowes",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LOWE'S OF MT. AIRY, "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Lowes",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LOWE'S OF STOW, OH. "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Lowes",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "LOWE'S OF STREETSBOR"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Lowes",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MACS CONVENIENC STOR"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Macs Convenience Store",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MACS CONVENIENCE STO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Macs Convenience Store",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MACY*S .COM #0129 MA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Macys",
+            "reason": "clothes"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MACY'S EAST #581 STO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Macys",
+            "reason": "clothes"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MALLEYS CHOCOLATES 3"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Malleys",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARATHON PETRO ROOTS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marathon",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARATHON PETRO TWINS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marathon",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARATHON PETRO073601"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marathon",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARATHON PETRO144667"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marathon",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARATHON PETRO156059"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marathon",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARATHON PETRO175588"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marathon",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARCOS PIZZA - 1097 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marcos",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARCS ALLIANCE ALLIA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marcs",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARCS CUYAHOGA CUYAH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marcs",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARC'S STOW STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marcs",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MARHOFER CHEVY PARTS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Marhofer Chevy",
+            "reason": "Auto Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MAURICES STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Maurices",
+            "reason": "Clothes"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MCDONALD'S F11579 ST"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "McDonalds",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MCDONALD'S F2542 CUY"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "McDonalds",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MCDONALD'S F31878 BR"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "McDonalds",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MCDONALD'S F34016 ST"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "McDonalds",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MCDONALD'S F34630 SU"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "McDonalds",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MCDONALD'S F5863 MAR"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "McDonalds",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MCDONALD'S F8064 HAR"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "McDonalds",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "METROPARKS ZOO CLEVE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Cleveland Zoo",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MFW BOOKS LLC 573202"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Mfw Books",
+            "reason": "Education"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MICROSOFT *OFFICE 36"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Microsoft",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MICROSOFT *ONEDRIVE "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Microsoft",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MICROSOFT *STORE 800"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Microsoft",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MINUTECLINIC #21441 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Minuteclinic",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MOE'S SW GRILL 351 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Moes Southwest Grille",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MR BULKY'S FOODS CUY"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Mr Bulkys",
+            "reason": "groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MSFT *OFFICE 800-642"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Microsoft",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MSFT *OFFICE OFFICE."
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Microsoft",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MSFT *ONEDRIVE 800-6"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Microsoft",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MURPHY7219ATWALMRT C"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Murphy",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MURPHY7515ATWALMART "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Murphy",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "MY LITTLE RED WAGON "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "My Little Red Wagon",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "NETFLIX.COM LOS GATO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Netflix.Com",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "NETFLIX.COM NETFLIX."
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Netflix.Com",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "OBGYN ASSOCIATES OF "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "OBGYN Associates of Akron",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "OED EDUCATOR LICENSU"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "OED Educator",
+            "reason": "Continuing Education"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "OH BUREAU MOTOR VEHI"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Ohio BMV",
+            "reason": "Compliance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "OLD CAROLINA BBQ STO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Old Carolina BBQ",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ONCE UPON A CHILD 20"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Once Upon A Child",
+            "reason": "Gift"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "OPC COL*SERVICE FEE "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Ashland University",
+            "reason": "Continuing Education"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "OPC*ASHLAND UNIV ASH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Ashland University",
+            "reason": "Continuing Education"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "OREILLY AUT000239030"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "OReilly",
+            "reason": "Auto Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PAGANINI SCHOOL OF C"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Paganini School",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PANERA BREAD #204626"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Panera Bread",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PANERA BREAD #4626 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Panera Bread",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PANERA BREAD #4813 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Panera Bread",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PANINI'S KENT KENT O"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Paninis",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PARTA - KCG KENT OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Parta",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PARTY STATION STOW O"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Party Station",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PAT CATANS 8 CUY FAL"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Pat Catans",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PAY*HOMEAWAY 189997 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "HomeAway",
+            "reason": "recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PAY*HOMEAWAY HA-GPDR"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "HomeAway",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PAY*PROPDAMAGEPROTEC"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "HomeAway",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PAYLESS SHO000296459"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Payless Shoe Source",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PAYLESS SHOE SOURCE "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Payless Shoe Source",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PEDIATRIC AND ADOLES"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Pediatric And Adolescent",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PERKINS RES002250949"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Perkinds Restaurnate",
+            "reason": "Restuarnte"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PET SUPPLIES PLUS #1"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Pet Supplies Plus",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PET SUPPLIES PLUS #6"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Pet Supplies Plus",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PILOT SEVILLE OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Pilot",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PINE CONE GIFT SHOPP"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Pine Cone Gift Ship",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PITA PIT KENT OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Pita Pit",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PIZZA HUT 007946 STO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Pizza Hut",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PIZZA HUT 009343 ALL"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Pizza Hut",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PIZZA HUT 027536 AKR"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Pizza Hut",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "POTBELLY #277 CLEVEL"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Potbelly",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "PRIMARY PET CARE LLC"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Primary Pet Care",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "QDI*QUEST DIAGNOSTIC"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "QDI Quest Diagnostics",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "REAL DEALS - GRANVIL"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Real Deals",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "RED ROBIN #601 CANTO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Red Robin",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "RED ROBIN NO 601 CAN"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Red Robin",
+            "reason": "Restaurantes"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "REDBOX *DVD RENTAL 8"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Redbox",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "REDBOX *DVD RENTAL O"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Redbox",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "REGAL CINEMAS HUDSON"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Regal Cinemas",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "REMEMBERNHU 402-935-"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Remember Nhu",
+            "reason": "Gift"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "REPUBLIC WIRELESS 80"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Republic Wireless",
+            "reason": "Phones"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "REPUBLIC WIRELESS 87"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Republic Wireless",
+            "reason": "Phones"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ROCK AUTO 608-661-13"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Rock Auto",
+            "reason": "Auto Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ROCKNE'S KENT KENT O"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Rocknes",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ROCKNES STEELS CORNE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Rocknes",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ROSEWOOD GRILL HUDSO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Rosewood Grill",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "RSVP NO. 36 STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "RSVP",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "RUFENER HILLTOP FARM"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Rufener Hilltop Farms",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SALLY BEAUTY #1996 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sally Beauty",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SAMS CLUB - #4750 CU"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sams Club",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SFI*PHOTOSBYSHUTTERF"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Shutterfly",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SHEETZ 0296000029644"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sheetz",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SHEETZ 0328000032854"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sheetz",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SHEETZ 0584000058434"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sheetz",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SHEETZ 2296000229624"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sheetz",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SHEETZ 2452000245214"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sheetz",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SHEETZ 2456000245624"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sheetz",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SHELL 57544399009 GA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Shell",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SHELL 57546559204 LE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Shell",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SHERATONHOTELSFB CUY"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sheraton Hotels",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SHUTTERFLY 800-986-1"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Shutterfly",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SILVER LAKE CC PRO S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Silver Lake",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SIMPLY SWANK SALON &"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Simply Swamk",
+            "reason": "Hygiene"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SP * WYLEE 888-746-7"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Wylee",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SPEEDWAY 03403 110 H"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Speedway",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SPEEDWAY 03680 104 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Speedway",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SPEEDWAY 03686 496 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Speedway",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SPEEDWAY 05120 234 C"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Speedway",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SPEEDWAY 09303 KEN K"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Speedway",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SPOTIFY NEW YORK CIT"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Spotify",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SPOTIFYAB STOCKHOLM "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Spotify",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SQ *CORNER CUP COFF "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Corner Cup Coffee",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SQ *CORNER CUP COFFE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Corner Cup Coffee",
+            "reason": "Restaurantes"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SQ *CRAZYBUTTRUE PO "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Crazy But True",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SQ *CRAZYBUTTRUE POP"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Crazy But True",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SQ *PEACE,LOVE AND L"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Peace Love and Little  Doughnuts",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SQ *POPPED KENT OH00"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Peace Love and Little  Doughnuts",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SQ *THE DAILY BREW, "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "The Daily Brew",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SQ *TWISTED MELTZ KE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Twisted Meltz",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "STAHLS FARM MARKET N"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Stahls Farm Market",
+            "reason": "groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "STARBUCKS #02954 KEN"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Starbucks",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "STARBUCKS #13265 STO"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Starbucks",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "STARBUCKS #14302 CUY"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Starbucks",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "STARBUCKS STORE 0971"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Starbucks",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "STARBUCKS STORE 1368"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Starbucks",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "STARBUCKS W114115015"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Starbucks",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "STEAMPOWERED.COM 425"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "store.steampowered.com",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "STOW DENTAL GROUP IN"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Stow Dental Group",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "STOWNUT DONUT AND DI"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Stownut Donut & Diner",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUBWAY 00044289255 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Subway",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUBWAY 00062380255 U"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Subway",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUBWAY 00068957255 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Subway",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUBWAY 00114363255 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Subway",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUBWAY 00213843255 S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Subway",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUBWAY 00216093255 A"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Subway",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUBWAY 00221911255 T"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Subway",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUBWAY 00366203255 K"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Subway",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUBWAY 03208014255 P"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Subway",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUMMA FOOD SERVICE A"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Summa Food Service",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUMMA HEALTH SYSTE C"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Summa Health",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUMMA PARKING AKRON "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Summa Parking",
+            "reason": "Hospitality"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUMMA WEST RES HOSP "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Summa Western Reserve Hospital",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUNCREST GARDENS PEN"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Suncrest Gardens",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SUNOCO 0705503100 BR"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sunoco",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SWEET FROG 200080 ST"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Sweet Frog",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "SWENSONS STOW KENT S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Swensons",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TARGET CLEVELAND OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Target",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TARGET CUYAHOGA FALL"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Target",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TARGET STREETSBORO O"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Target",
+            "reason": "Groceries"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TERRY LUMBER AND SUP"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Terry Lumber and Supply",
+            "reason": "Home Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "THANOS FAMILY RESTAU"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Thanos Family Restaurante",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "THE DISTRICT BOUTIQU"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "The District Boutique",
+            "reason": "Clothing"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "THE HOME DEPOT #3809"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "The Home Depot",
+            "reason": "Home Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "THE HOME DEPOT #3859"
+        },
+        "source": "dcard",
+        "mapped": {
+            "item": "Sand Paper",
+            "reason": "Home Maintenance",
+            "party": "The Home Depot"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "THE HOME DEPOT 3859 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "The Home Depot",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "THE MENS WEARHOUSE #"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "The Mens Warehouse",
+            "reason": "Hospitality"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "THE OLDE PICKET FENC"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "The Olde Picket Fence",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "THE PETS PAJAMAS AKR"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "The Pets Pajamas",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TOYS R US #9203 CUYA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Toys R' Us",
+            "reason": "Gifts"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TOYS 'R' US CUYAHOGA"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Toys R' Us",
+            "reason": "Gifts"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TOYSRUS-BABIESRUS 61"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Toys R' Us",
+            "reason": "Gifts"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TOYSRUS-BABIESRUS 80"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Toys R' Us",
+            "reason": "Gifts"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TRACTOR SUPPLY #1215"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Tractor Supply",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TRACTOR-SUPPLY-CO #0"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Tractor Supply",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TREE CITY COFFEE & P"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Tree City Coffee",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TURF TRIMMERS INC KE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Turf Trimmers",
+            "reason": "Home Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "TWISTED MELTZ - KENT"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Twisted Meltz",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "UH EVANS MEDICAL CEN"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "UH Evans Medical Center",
+            "reason": "Medical"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "U-HAUL OF KENT-STOW "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "U-Haul",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "ULTA #565 STOW OH"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Ulta",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "VIDANGEL.COM 801-921"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "VidAngel",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "VTECHELECTR 402-935-"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "V-Tech Electronics",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WALGREENS #4295 STOW"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Walgreens",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WAL-MART SC - #1039 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Wal-Mart",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WAL-MART SC - #1499 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Wal-Mart",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WAL-MART SC - #2313 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Wal-Mart",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WAL-MART SC - #2323 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Wal-Mart",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WAL-MART SC - #2506 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Wal-Mart",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WAL-MART SC - #7162 "
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Wal-Mart",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WALMART.COM 800-966-"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Wal-Mart",
+            "reason": "Home Supplies"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WENDY'S BRIMFIELD #1"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Wendys",
+            "reason": "Restaurante"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WIKIMEDIA 8776009454"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Wikimedia",
+            "reason": "Gift"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WILLIS GAP GENERAL S"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Willis Gap General Store",
+            "reason": "Gas"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WOODSYS MUSIC INC KE"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Woodsys Music",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WOODSY'S MUSIC, INC."
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Woodsys Music",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WWW.ADVANCEAUTOPARTS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Advance Auto",
+            "reason": "Auto Maintenance"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WYOGA VETERINARY HOS"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Wyoga Veterinary",
+            "reason": "Recreation"
+        }
+    },
+    {
+        "map": "First 20",
+        "ret_val": {
+            "f20": "WALMART GROCERY 800-"
+        },
+        "source": "dcard",
+        "mapped": {
+            "party": "Walmart",
+            "reason": "groceries"
+        }
+    }
+]
