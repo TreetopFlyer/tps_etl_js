@@ -11,11 +11,15 @@ var pg = require('pg');
 var server = express();
 server.engine('handlebars', handlebars());
 server.set('view engine', 'handlebars');
-server.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
+
+server.use(function(inReq, inRes, inNext)
+{
+    inRes.header("Access-Control-Allow-Origin", "*");
+    inRes.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE, OPTIONS");
+    inRes.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    inNext();
 });
+
 
 var Postgres = new pg.Client({
     user: process.env.user,
@@ -23,186 +27,82 @@ var Postgres = new pg.Client({
     host: process.env.host,
     port: process.env.port,
     database: process.env.database,
-    application_name: "tps_etl_api",
-    ssl: true
+    ssl: false,
+    application_name: "tps_etl_api"
 });
-
+Postgres.FirstRow = function(inSQL,args, inResponse)
+{
+    Postgres.query(inSQL,args, (err, res) => {
+        if (err === null)
+        {
+            inResponse.json(res.rows[0]);
+            return;
+        }
+        inResponse.json(err.message);
+    });
+};
 Postgres.connect();
 
-//-------------------------------------------------------------list source--------------------------------------------------------------------------
+//----------------------------------------------------------source definitions------------------------------------------------------------
 
-server.use("/srce_list", function (inReq, inRes) {
+//returns array of all sources
+server.get("/source", function (inReq, inRes)
+{
+    var sql = "SELECT jsonb_agg(defn) source_list FROM tps.srce";
+    Postgres.FirstRow(sql,[], inRes);
+});
+//returns message about status and error description
+server.post("/source", bodyParser.json(), function (inReq, inRes)// remove body parsing, just pass post body to the sql string build
+{
+    var sql = "SELECT x.message FROM tps.srce_set($1::jsonb) as x(message)";
+    Postgres.FirstRow(sql,[JSON.stringify(inReq.body)], inRes);
+});
 
-    var sql = "SELECT jsonb_agg(defn) source_list FROM tps.srce"
-    console.log(sql);
+//----------------------------------------------------------regex instractions--------------------------------------------------------------------------
+//list all regex operations
+server.get("/regex", function (inReq, inRes)
+{
+    var sql = "SELECT jsonb_agg(regex) regex FROM tps.map_rm";
+    Postgres.FirstRow(sql, [], inRes);
+});
 
-    Postgres.query(sql, (err, res) => {
-        inRes.json(res.rows[0]);
-        console.log("source list request complete");
-    });
-}
-);
+//set one or more map definitions
+server.post("/regex", bodyParser.json(), function (inReq, inRes)
+{
+    var sql = "SELECT x.message FROM tps.srce_map_def_set($1::jsonb) as x(message)";
+    Postgres.FirstRow(sql, [JSON.stringify(inReq.body)], inRes);
+});
 
-//-------------------------------------------------------------list maps--------------------------------------------------------------------------
+//------------------------------------------------------------mappings-------------------------------------------------------------------------------
 
-server.use("/map_list", function (inReq, inRes) {
+//list unmapped items flagged to be mapped   ?srce=
+server.get("/unmapped", function (inReq, inRes)
+{
+    var sql = "SELECT jsonb_agg(row_to_json(x)::jsonb) regex FROM tps.report_unmapped_recs($1::text) x";
+    Postgres.FirstRow(sql,[inReq.query.srce], inRes);
+});
 
-    var sql = "SELECT jsonb_agg(regex) regex FROM tps.map_rm"
-    console.log(sql);
+//add entries to lookup table
+server.post("/mapping", bodyParser.json(), function (inReq, inRes)
+{
+    var sql = "SELECT x.message FROM tps.map_rv_set($1::jsonb) as x(message)";
+    Postgres.FirstRow(sql,[JSON.stringify( inReq.body)], inRes);
+});
 
-    Postgres.query(sql, (err, res) => {
-
-        if (err === null) {
-            inRes.json(res.rows[0]);
-            return;
-        }
-        inRes.json(err.message);
-    });
-}
-);
-
-//--------------------------------------------------------list unmapped items flagged to be mapped---------------------------------------------------
-
-server.use("/unmapped", function (inReq, inRes) {
-
-    var sql = "SELECT jsonb_agg(row_to_json(x)::jsonb) regex FROM tps.report_unmapped_recs('";
-    sql += inReq.query.srce + "') x"
-    console.log(sql);
-
-    Postgres.query(sql, (err, res) => {
-
-        if (err === null) {
-            inRes.json(res.rows[0]);
-            return;
-        }
-        inRes.json(err.message);
-    });
-}
-);
-
-//-------------------------------------------------------------set source via json in body--------------------------------------------------------------------------
-
-server.use("/srce_set", bodyParser.json(), function (inReq, inRes) {
-    
-    //validate the body contents before pushing to sql?
-    var sql = "SELECT x.message FROM tps.srce_set($$";
-    sql += JSON.stringify( inReq.body);
-    sql += "$$::jsonb) as x(message)";
-    console.log(sql);
-
-    Postgres.query(sql, (err, res) => {
-
-        //Postgres.end();
-
-        if (err === null) {
-            inRes.json(res.rows[0]);
-            return;
-        }
-        inRes.json(err.message);
-        //handle error
-    });
-}
-);
-
-//-------------------------------------------------------------set one or more map definitions--------------------------------------------------------------------------
-
-server.use("/mapdef_set", bodyParser.json(), function (inReq, inRes) {
-
-    //validate the body contents before pushing to sql?
-    var sql = "SELECT x.message FROM tps.srce_map_def_set($$";
-    sql += JSON.stringify( inReq.body);
-    sql += "$$::jsonb) as x(message)";
-    console.log(sql);
-
-    Postgres.query(sql, (err, res) => {
-
-        //Postgres.end();
-
-        if (err === null) {
-            inRes.json(res.rows[0]);
-            return;
-        }
-        inRes.json(err.message);
-        //handle error
-    });
-
-}
-);
-
-//-------------------------------------------------------------add entries to lookup table--------------------------------------------------------------------------
-
-server.use("/mapval_set", bodyParser.json(), function (inReq, inRes) {
-
-    //validate the body contents before pushing to sql?
-    var sql = "SELECT x.message FROM tps.map_rv_set($$";
-    sql += JSON.stringify( inReq.body);
-    sql += "$$::jsonb) as x(message)";
-    console.log(sql);
-
-    Postgres.query(sql, (err, res) => {
-
-        //Postgres.end();
-
-        if (err === null) {
-            inRes.json(res.rows[0]);
-            return;
-        }
-        inRes.json(err.message);
-        //handle error
-    });
-
-}
-);
-
-/*
-send a csv with powershell:
-wget -uri http://localhost/import  -Method Post -InFile "C:\Users\fleet\Downloads\d.csv"
-bash
-curl -v -F upload=@//mnt/c/Users/fleet/Downloads/d.csv localhost/import
-*/
 
 //-------------------------------------------------------------import data--------------------------------------------------------------------------
 
 server.use("/import", upload.single('upload'), function (inReq, inRes) {
 
-    //console.log(inReq.file);
     console.log("should have gotten file as post body here");
     var csv = inReq.file.buffer.toString('utf8')
-    // create a new converter object
-    //var jobj = csvtojson.fromString(csv).
     //{headers: "true", delimiter: ",", output: "jsonObj", flatKeys: "true"}
     csvtojson({ flatKeys: "true" }).fromString(csv).then(
         (x) => {
-            //console.log(x);
-            //inRes.json(x);
-
-            //push to db
-            var sql = "SELECT x.message FROM tps.srce_import($$";
-            sql += inReq.query.srce;
-            sql += "$$, $$" 
-            sql += JSON.stringify(x)
-            sql += "$$::jsonb) as x(message)"
-            console.log("sql for insert here");
-            //console.log(sql);
-
-            Postgres.query(sql, (err, res) => {
-
-                //Postgres.end();
-
-                if (err === null) {
-                    inRes.json(res.rows[0]);
-                    Postgres.end();
-                    return;
-                }
-                inRes.json(err.message);
-                //Postgres.end();
-                //handle error
-            }
-        );
+            var sql = "SELECT x.message FROM tps.srce_import($1, $2::jsonb) as x(message)"
+            console.log(sql);
+            Postgres.FirstRow(sql, [inReq.query.srce, JSON.stringify(x)], inRes);
         }
-        //const jsonArray = csv().fromFile(csvFilePath);
-        //csvtojson({ output: "csv" }).fromString(csv).then((jsonObj) => { console.log(jsonObj) });
-        //validate the body contents before pushing to sql?
     );
     }
 );
@@ -211,49 +111,56 @@ server.use("/import", upload.single('upload'), function (inReq, inRes) {
 
 server.use("/csv_suggest", upload.single('upload'), function (inReq, inRes) {
 
-    //console.log(inReq.file);
     console.log("should have gotten file as post body here");
     var csv = inReq.file.buffer.toString('utf8')
-    // create a new converter object
-    //var jobj = csvtojson.fromString(csv).
     //{headers: "true", delimiter: ",", output: "jsonObj", flatKeys: "true"}
     csvtojson({ flatKeys: "true" }).fromString(csv).then(
         (x) => {
-            //console.log(x);
-            //inRes.json(x);
-
-            //push to db
-            var sug = {};
+            var sug = {
+                schemas: {
+                    default: []
+                },
+                loading_function: "csv",
+                source:"client_file",
+                name: "",
+                constraint: []
+            };
             for (var key in x[0]) {
+                var col = {};
+                //test if number
                 if (!isNaN(parseFloat(x[0][key])) && isFinite(x[0][key])) {
+                    //if is a number but leading character is -0- then it's text
                     if (x[0][key].charAt(0) == "0"){
-                        sug[key] = "text";
+                        col["type"] = "text";
                     }
+                    //if number and leadign character is not 0 then numeric
                     else {
-                        sug[key] = "numeric";
+                        col["type"] = "numeric";
                     }
                 } 
+                //if can cast to a date within a hundred years its probably a date
                 else if (Date.parse(x[0][key]) > Date.parse('1950-01-01') && Date.parse(x[0][key]) < Date.parse('2050-01-01')) {
-                    sug[key] = "date";
+                    col["type"] = "date";
                 }
+                //otherwise its text
                 else {
-                    sug[key] = "text";
+                    col["type"] = "text";
                 }
+                col["path"] = "{" + key + "}";
+                col["column_name"] = key;
+                sug.schemas.default.push(col);
             }
             console.log(sug);
             inRes.json(sug);
-            //console.log(sql);
         }
-        //const jsonArray = csv().fromFile(csvFilePath);
-        //csvtojson({ output: "csv" }).fromString(csv).then((jsonObj) => { console.log(jsonObj) });
-        //validate the body contents before pushing to sql?
     );
     }
 );
 
 
-    server.get("/", function (inReq, inRes) {
-        inRes.render("definition", { title: "definition", layout: "main" });
-    })
+server.get("/", function (inReq, inRes)
+{
+    inRes.render("definition", { title: "definition", layout: "main" });
+});
 
-    module.exports = server;
+module.exports = server;
