@@ -116,27 +116,39 @@ server.use("/csv_suggest", upload.single('upload'), function (inReq, inRes) {
     //{headers: "true", delimiter: ",", output: "jsonObj", flatKeys: "true"}
     csvtojson({ flatKeys: "true" }).fromString(csv).then(
         (x) => {
-            var sug = {};
+            var sug = {
+                schemas: {
+                    default: []
+                },
+                loading_function: "csv",
+                source:"client_file",
+                name: "",
+                constraint: []
+            };
             for (var key in x[0]) {
+                var col = {};
                 //test if number
                 if (!isNaN(parseFloat(x[0][key])) && isFinite(x[0][key])) {
                     //if is a number but leading character is -0- then it's text
                     if (x[0][key].charAt(0) == "0"){
-                        sug[key] = "text";
+                        col["type"] = "text";
                     }
                     //if number and leadign character is not 0 then numeric
                     else {
-                        sug[key] = "numeric";
+                        col["type"] = "numeric";
                     }
                 } 
                 //if can cast to a date within a hundred years its probably a date
                 else if (Date.parse(x[0][key]) > Date.parse('1950-01-01') && Date.parse(x[0][key]) < Date.parse('2050-01-01')) {
-                    sug[key] = "date";
+                    col["type"] = "date";
                 }
                 //otherwise its text
                 else {
-                    sug[key] = "text";
+                    col["type"] = "text";
                 }
+                col["path"] = "{" + key + "}";
+                col["column_name"] = key;
+                sug.schemas.default.push(col);
             }
             console.log(sug);
             inRes.json(sug);
