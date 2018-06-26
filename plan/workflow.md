@@ -59,3 +59,54 @@
 ```
 ## regex maintenance
 
+```
++-------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                     |
+|                                                                                                                                     |
+|                                                 filter - only apply to where these top level keys exist                             |
+|  sources                  name                                                                                                      |
+|  +---------------+        +--------------+      +----------------------+----------------------+                                     |
+|  |dcard          |        |First 20      |      |top level key         | value                |                                     |
+|  |hunt           |        +--------------+      +---------------------------------------------+                                     |
+|  |pncc           |        source                |key-name              |certain value         |                                     |
+|  |pnco           |        +--------------+      |                      |                      |                                     |
+|  |pncl           |        |dcard         |      |                      |                      |                                     |
+|  |paycom         |        +--------------+      |                      |                      |                                     |
+|  |adp            |        sequence              |                      |                      |                                     |
+|  |               |        +--------------+      +----------------------+----------------------+                                     |
+|  +---------------+        |1             |                                                                                          |
+|  targets                  +--------------+                                                                                          |
+|  +---------------+        function                                                                                                  |
+|  |check number|1 |        +--------------+                                                                                          |
+|  |strip commas|2 |        |extract       | enum extract, replace                                                                    |
+|  |trans type  |3 |        +--------------+                                                                                          |
+|  |currency    |4 |                                                                                                                  |
+|  |parse ach   |5 |        +-----------------------------------+---------+-----------------------------------------------+           |
+|  |            |  |        |key           |map |fl|re|replace  |  newkey |                                               |           |
+|  |            |  |        +---------------------------------------------------------------------------------------------+           |
+|  |            |  |        |{Description} |y   |  |y |         | f20     |.{1,20}                                        |delete     |
+|  |            |  |        |              |    |  |  |         |         |                                               |add        |
+|  |            |  |        |              |    |  |  |         |         |                                               |           |
+|  |            |  |        |              |    |  |  |         |         |                                               |           |
+|  |            |  |        +--------------+----+--+--+---------+---------+-----------------------------------------------+           |
+|  +------------+--+                                                                                                                  |
+|                           +-------------------------------------------------------------------------------------+                   |
+|                           |map     |return value                   |party             |reason       |add column |                   |
+|                           +-------------------------------------------------------------------------------------+                   |
+|                           |First 20|{"f20": "DISCOUNT DRUG MART 3"}|Discount Drug Mart|groceries    |           |                   |
+|                           |First 20|{"f20": "TARGET STOW OH"}      |Target            |groceries    |           |                   |
+|                           |First 20|{"f20": "WALMART GROCERY 800-"}|Walmart           |groceries    |           |                   |
+|                           |First 20|{"f20": "CIRCLE K 05416 STOW "}|Circle K          |gasoline     |           |                   |
+|                           |First 20|{"f20": "TARGET.COM * 800-591"}|Target            |home supplies|           |                   |
+|                           |First 20|{"f20": "ACME NO. 17 STOW OH"} |Acme              |groceries    |           |                   |
+|                           |First 20|{"f20": "AT&T *PAYMENT 800-28"}|AT&T              |internet     |           |                   |
+|                           |First 20|{"f20": "AUTOZONE #0722 STOW "}|Autozone          |auto maint   |           |                   |
+|                           |First 20|{"f20": "BESTBUYCOM8055267948"}|BestBuy           |home supplies|           |                   |
+|                           |First 20|{"f20": "BUFFALO WILD WINGS K"}|Buffalo Wild Wings|restaurante  |           |                   |
+|                           |First 20|{"f20": "CASHBACK BONUS REDEM"}|Discover Card     |financing    |           |                   |
+|                           |First 20|{"f20": "CLE CLINIC PT PMTS 2"}|Cleveland Clinic  |medical      |           |                   |
+|                           |                                                                         |           |                   |
+|                           +-------------------------------------------------------------------------------------+                   |
++-------------------------------------------------------------------------------------------------------------------------------------+
+
+```

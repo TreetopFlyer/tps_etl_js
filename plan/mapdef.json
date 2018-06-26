@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Trans Type",
+        "srce": "PNCC",
+        "regex": {
+            "defn": [
+                {
+                    "key": "{AccountName}",
+                    "map": "y",
+                    "field": "acctn",
+                    "regex": "(.*)",
+                    "retain": "n"
+                },
+                {
+                    "key": "{Transaction}",
+                    "map": "y",
+                    "field": "trans",
+                    "regex": "(.*)",
+                    "retain": "n"
+                },
+                {
+                    "key": "{Description}",
+                    "map": "y",
+                    "field": "ini",
+                    "regex": "([\\w].*?)(?=$| -|\\s[0-9].*?|\\s[\\w/]+?:)",
+                    "retain": "y"
+                }
+            ],
+            "where": [
+                {}
+            ],
+            "function": "extract",
+            "description": "extract intial description in conjunction with account name and transaction type for mapping"
+        },
+        "sequence": 1
+    }
+]   
