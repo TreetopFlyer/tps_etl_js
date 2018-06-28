@@ -27,7 +27,7 @@ var Postgres = new pg.Client({
     host: process.env.host,
     port: process.env.port,
     database: process.env.database,
-    ssl: false,
+    ssl: true,
     application_name: "tps_etl_api"
 });
 Postgres.FirstRow = function(inSQL,args, inResponse)

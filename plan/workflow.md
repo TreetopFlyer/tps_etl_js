@@ -1,5 +1,5 @@
 
-## workflow overview
+## general workflow overview
 * initial setup
     1. create a source
     2. run import
