@@ -62,8 +62,8 @@ server.post("/source", bodyParser.json(), function (inReq, inRes)// remove body 
 //list all regex operations
 server.get("/regex", function (inReq, inRes)
 {
-    var sql = "SELECT jsonb_agg(regex) regex FROM tps.map_rm";
-    Postgres.FirstRow(sql, [], inRes);
+    var sql = "SELECT jsonb_agg(regex) regex FROM tps.map_rm WHERE srce = $1::text";
+    Postgres.FirstRow(sql, [inReq.query.srce], inRes);
 });
 
 //set one or more map definitions
@@ -79,6 +79,13 @@ server.post("/regex", bodyParser.json(), function (inReq, inRes)
 server.get("/unmapped", function (inReq, inRes)
 {
     var sql = "SELECT jsonb_agg(row_to_json(x)::jsonb) regex FROM tps.report_unmapped_recs($1::text) x";
+    Postgres.FirstRow(sql,[inReq.query.srce], inRes);
+});
+
+//list unmapped items flagged to be mapped   ?srce=
+server.get("/mapping", function (inReq, inRes)
+{
+    var sql = "SELECT jsonb_agg(row_to_json(x)::jsonb) regex FROM tps.map_rv x WHERE srce = $1::text";
     Postgres.FirstRow(sql,[inReq.query.srce], inRes);
 });
 
