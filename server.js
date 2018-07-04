@@ -107,6 +107,14 @@ server.use("/import", upload.single('upload'), function (inReq, inRes) {
     }
 );
 
+//----------------------------------------------------------import_logs--------------------------------------------------------------------------------------------------------------------------------
+
+server.get("/import_log", function (inReq, inRes)
+{
+    var sql = "SELECT jsonb_agg(info) info FROM tps.trans_log WHERE info @> $1::jsonb";
+    Postgres.FirstRow(sql, [inReq.query], inRes);
+});
+
 //-------------------------------------------------------------suggest source def----------------------------------------------------------------------------------------------------------------------
 
 server.use("/csv_suggest", upload.single('upload'), function (inReq, inRes) {
