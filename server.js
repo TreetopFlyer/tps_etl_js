@@ -197,19 +197,29 @@ server.get("/doc_add_gl_offset_single", bodyParser.json(), function (inReq, inRe
 {
     var l = 0;
     var tot = 0.00;
+    var bomb = false;
     console.log(inReq.body);
     x = inReq.body;
+    //add GL array
     x.GL = [];
     for (var i in x.item){
         var line = x.item[i];
-        x.GL.push(line);  
-        tot = tot + line.amount;
+        if ((line.account != null) && (line.amount != null)) {
+            x.GL.push(line);  
+            tot = tot + (line.amount || 0);
+        }
+        else {
+            bomb = true;
+        }
+        //add the whole line as-is
     }
-    var ofs = JSON.parse(JSON.stringify(x.header));
-    ofs.account = ofs.offset_account;
-    delete ofs.offset_account;
-    ofs.amount = -tot;
-    x.GL.push(ofs);
+    if (bomb = false) {
+        var ofs = JSON.parse(JSON.stringify(x.header));
+        ofs.account = ofs.offset_account;
+        delete ofs.offset_account;
+        ofs.amount = -tot;
+        x.GL.push(ofs);
+    }
     inRes.json(x);
 });
 
