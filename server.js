@@ -27,7 +27,7 @@ var Postgres = new pg.Client({
     host: process.env.host,
     port: process.env.port,
     database: process.env.database,
-    ssl: true,
+    ssl: false,
     application_name: "tps_etl_api"
 });
 Postgres.FirstRow = function(inSQL,args, inResponse)
@@ -114,7 +114,7 @@ server.use("/import", upload.single('upload'), function (inReq, inRes) {
     }
 );
 
-//----------------------------------------------------------import_logs--------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------list import logs---------------------------------------------------------------------------------------------------------------------------
 
 server.get("/import_log", function (inReq, inRes)
 {
@@ -171,6 +171,47 @@ server.use("/csv_suggest", upload.single('upload'), function (inReq, inRes) {
     );
     }
 );
+
+//add ledger array and create offset account for every line
+server.get("/doc_add_gl_offset_multi", bodyParser.json(), function (inReq, inRes)
+{
+    var l = 0;
+    console.log(inReq.body);
+    x = inReq.body;
+    x.GL = [];
+    for (var i in x.item){
+        var line = x.item[i];
+        x.GL.push(line);  
+        //copy the existing line to the GL array  
+        var ofs = JSON.parse(JSON.stringify(line));
+        ofs.account = x.header.offset_account;
+        ofs.amount = -ofs.amount;
+        //add another line the GL array using the offset account
+        x.GL.push(ofs);
+    }
+    inRes.json(x);
+});
+
+//add ledger array and create offset account for total of all lines
+server.get("/doc_add_gl_offset_single", bodyParser.json(), function (inReq, inRes)
+{
+    var l = 0;
+    var tot = 0.00;
+    console.log(inReq.body);
+    x = inReq.body;
+    x.GL = [];
+    for (var i in x.item){
+        var line = x.item[i];
+        x.GL.push(line);  
+        tot = tot + line.amount;
+    }
+    var ofs = JSON.parse(JSON.stringify(x.header));
+    ofs.account = ofs.offset_account;
+    delete ofs.offset_account;
+    ofs.amount = -tot;
+    x.GL.push(ofs);
+    inRes.json(x);
+});
 
 
 server.get("/", function (inReq, inRes)
