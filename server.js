@@ -76,16 +76,23 @@ server.post("/regex", bodyParser.json(), function (inReq, inRes)
 //------------------------------------------------------------mappings---------------------------------------------------------------------------------------------------------------------------------
 
 //list unmapped items flagged to be mapped   ?srce=
-server.get("/unmapped", function (inReq, inRes)
+server.get("/unmapped_all", function (inReq, inRes)
 {
     var sql = "SELECT jsonb_agg(row_to_json(x)::jsonb) regex FROM tps.report_unmapped_recs($1::text) x";
     Postgres.FirstRow(sql,[inReq.query.srce], inRes);
 });
 
 //list unmapped items flagged to be mapped   ?srce=
+server.get("/unmapped", function (inReq, inRes)
+{
+    var sql = "SELECT jsonb_agg(row_to_json(x)::jsonb) regex FROM tps.report_unmapped($1::text) x";
+    Postgres.FirstRow(sql,[inReq.query.srce], inRes);
+});
+
 server.get("/mapping", function (inReq, inRes)
 {
     var sql = "SELECT jsonb_agg(row_to_json(x)::jsonb) regex FROM tps.map_rv x WHERE srce = $1::text";
+
     Postgres.FirstRow(sql,[inReq.query.srce], inRes);
 });
 
@@ -94,6 +101,14 @@ server.post("/mapping", bodyParser.json(), function (inReq, inRes)
 {
     var sql = "SELECT x.message FROM tps.map_rv_set($1::jsonb) as x(message)";
     Postgres.FirstRow(sql,[JSON.stringify( inReq.body)], inRes);
+});
+
+//---------------------------------------------------------list imports--------------------------------------------------------------------------------------------------------------------------------
+
+server.get("/import_log", function (inReq, inRes)
+{
+    var sql = "SELECT jsonb_agg(row_to_json(l)::jsonb) regex FROM tps.trans_log l";
+    Postgres.FirstRow(sql,[], inRes);
 });
 
 
