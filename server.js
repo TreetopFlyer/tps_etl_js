@@ -86,6 +86,8 @@ server.get("/unmapped_all", function (inReq, inRes)
 server.get("/unmapped", function (inReq, inRes)
 {
     var sql = "SELECT jsonb_agg(row_to_json(x)::jsonb) regex FROM tps.report_unmapped($1::text) x";
+    Postgres.FirstRow(sql,[inReq.query.srce], inRes);
+});
 
 server.get("/mapping", function (inReq, inRes)
 {
