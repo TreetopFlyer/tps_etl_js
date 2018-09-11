@@ -228,7 +228,7 @@ server.get("/doc_add_gl_offset_single", bodyParser.json(), function (inReq, inRe
         }
         //add the whole line as-is
     }
-    if (bomb = false) {
+    if (bomb == false) {
         var ofs = JSON.parse(JSON.stringify(x.header));
         ofs.account = ofs.offset_account;
         delete ofs.offset_account;
