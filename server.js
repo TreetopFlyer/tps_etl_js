@@ -38,7 +38,7 @@ Postgres.FirstRow = function(inSQL,args, inResponse)
             inResponse.json(res.rows[0]);
             return;
         }
-        inResponse.json(err.message);
+        inResponse.json(err.stack);
     });
 };
 Postgres.connect();
@@ -193,18 +193,54 @@ server.get("/doc_add_gl_offset_multi", bodyParser.json(), function (inReq, inRes
     var l = 0;
     console.log(inReq.body);
     x = inReq.body;
-    x.GL = [];
+    x.gl = {};
+    x.gl.lines = [];
+    x.gl.jpath = [];
     for (var i in x.item){
         var line = x.item[i];
-        x.GL.push(line);  
+        x.gl.lines.push(line);
+        var ref = [];
+        ref.push("{item,"+i+"}");
+        ref.push("{header}");
+        x.gl.jpath.push(ref);
         //copy the existing line to the GL array  
         var ofs = JSON.parse(JSON.stringify(line));
-        ofs.account = x.header.offset_account;
+        ofs.account = x.header.account;
         ofs.amount = -ofs.amount;
         //add another line the GL array using the offset account
-        x.GL.push(ofs);
+        x.gl.lines.push(ofs);
+        x.gl.jpath.push(ref);
     }
     inRes.json(x);
+});
+
+//add ledger array and create offset account for every line
+server.get("/add_gl_multi_and_post", bodyParser.json(), function (inReq, inRes)
+{
+    var l = 0;
+    console.log(inReq.body);
+    x = inReq.body;
+    x.gl = {};
+    x.gl.lines = [];
+    x.gl.jpath = [];
+    for (var i in x.item){
+        var line = x.item[i];
+        x.gl.lines.push(line);
+        var ref = [];
+        ref.push("{item,"+i+"}");
+        ref.push("{header}");
+        x.gl.jpath.push(ref);
+        //copy the existing line to the GL array  
+        var ofs = JSON.parse(JSON.stringify(line));
+        ofs.account = x.header.account;
+        ofs.amount = -ofs.amount;
+        //add another line the GL array using the offset account
+        x.gl.lines.push(ofs);
+        x.gl.jpath.push(ref);
+    }
+    var sql = "INSERT INTO evt.bpr (bpr) SELECT $1";
+    console.log(JSON.stringify(x));
+    Postgres.FirstRow(sql,[JSON.stringify(x)], inRes);
 });
 
 //add ledger array and create offset account for total of all lines
@@ -230,8 +266,8 @@ server.get("/doc_add_gl_offset_single", bodyParser.json(), function (inReq, inRe
     }
     if (bomb == false) {
         var ofs = JSON.parse(JSON.stringify(x.header));
-        ofs.account = ofs.offset_account;
-        delete ofs.offset_account;
+        ofs.account = ofs.account;
+        delete ofs.account;
         ofs.amount = -tot;
         x.GL.push(ofs);
     }
