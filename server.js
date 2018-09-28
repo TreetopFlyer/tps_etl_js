@@ -187,35 +187,14 @@ server.use("/csv_suggest", upload.single('upload'), function (inReq, inRes) {
     }
 );
 
-//add ledger array and create offset account for every line
-server.get("/doc_add_gl_offset_multi", bodyParser.json(), function (inReq, inRes)
-{
-    var l = 0;
-    console.log(inReq.body);
-    x = inReq.body;
-    x.gl = {};
-    x.gl.lines = [];
-    x.gl.jpath = [];
-    for (var i in x.item){
-        var line = x.item[i];
-        x.gl.lines.push(line);
-        var ref = [];
-        ref.push("{item,"+i+"}");
-        ref.push("{header}");
-        x.gl.jpath.push(ref);
-        //copy the existing line to the GL array  
-        var ofs = JSON.parse(JSON.stringify(line));
-        ofs.account = x.header.account;
-        ofs.amount = -ofs.amount;
-        //add another line the GL array using the offset account
-        x.gl.lines.push(ofs);
-        x.gl.jpath.push(ref);
-    }
-    inRes.json(x);
-});
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------ledger---------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //add ledger array and create offset account for every line
-server.get("/add_gl_multi_and_post", bodyParser.json(), function (inReq, inRes)
+server.get("/gl_mhi_multi_post", bodyParser.json(), function (inReq, inRes)
 {
     var l = 0;
     console.log(inReq.body);
@@ -246,7 +225,7 @@ server.get("/add_gl_multi_and_post", bodyParser.json(), function (inReq, inRes)
 });
 
 //add ledger array and create offset account for total of all lines
-server.get("/doc_add_gl_offset_single", bodyParser.json(), function (inReq, inRes)
+server.get("/gl_mhi_single_build", bodyParser.json(), function (inReq, inRes)
 {
     var l = 0;
     var tot = 0.00;
