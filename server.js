@@ -224,18 +224,20 @@ server.get("/add_gl_multi_and_post", bodyParser.json(), function (inReq, inRes)
     x.gl.lines = [];
     x.gl.jpath = [];
     for (var i in x.item){
+        //copy the current item to the gl array
         var line = x.item[i];
         x.gl.lines.push(line);
+        //build references to 'item' array
         var ref = [];
         ref.push("{item,"+i+"}");
         ref.push("{header}");
         x.gl.jpath.push(ref);
-        //copy the existing line to the GL array  
+        //copy the current item to the gl array again, but swap account with supplied 'account' in header
         var ofs = JSON.parse(JSON.stringify(line));
         ofs.account = x.header.account;
         ofs.amount = -ofs.amount;
-        //add another line the GL array using the offset account
         x.gl.lines.push(ofs);
+        //add the same reference again for the offset account
         x.gl.jpath.push(ref);
     }
     var sql = "INSERT INTO evt.bpr (bpr) SELECT $1";
