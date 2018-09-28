@@ -224,6 +224,36 @@ server.get("/gl_mhi_multi_post", bodyParser.json(), function (inReq, inRes)
     Postgres.FirstRow(sql,[JSON.stringify(x)], inRes);
 });
 
+
+//add ledger array and create offset account for every line
+server.get("/gl_mje_build", bodyParser.json(), function (inReq, inRes)
+{
+    var l = 0;
+    console.log(inReq.body);
+    x = inReq.body;
+    x.gl = {};
+    x.gl.lines = [];
+    x.gl.jpath = [];
+    for (var i in x.item){
+        //copy the current item to the gl array
+        var line = x.item[i];
+        x.gl.lines.push(line);
+        //build references to 'item' array
+        var ref = [];
+        ref.push("{item,"+i+"}");
+        ref.push("{header}");
+        x.gl.jpath.push(ref);
+        //copy the current item to the gl array again, but swap account with supplied 'account' in header
+        var ofs = JSON.parse(JSON.stringify(line));
+        ofs.account = x.header.account;
+        ofs.amount = -ofs.amount;
+        x.gl.lines.push(ofs);
+        //add the same reference again for the offset account
+        x.gl.jpath.push(ref);
+    }
+    inRes.json(x);
+});
+
 //add ledger array and create offset account for total of all lines
 server.get("/gl_mhi_single_build", bodyParser.json(), function (inReq, inRes)
 {
