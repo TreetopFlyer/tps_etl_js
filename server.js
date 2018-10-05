@@ -234,24 +234,19 @@ server.get("/gl_mje_build", bodyParser.json(), function (inReq, inRes)
     x.gl = {};
     x.gl.lines = [];
     x.gl.jpath = [];
-    for (var i in x.item){
+    for (var i in x.items){
         //copy the current item to the gl array
-        var line = x.item[i];
+        var line = x.items[i];
         x.gl.lines.push(line);
         //build references to 'item' array
         var ref = [];
-        ref.push("{item,"+i+"}");
+        ref.push("{items,"+i+"}");
         ref.push("{header}");
         x.gl.jpath.push(ref);
-        //copy the current item to the gl array again, but swap account with supplied 'account' in header
-        var ofs = JSON.parse(JSON.stringify(line));
-        ofs.account = x.header.account;
-        ofs.amount = -ofs.amount;
-        x.gl.lines.push(ofs);
-        //add the same reference again for the offset account
-        x.gl.jpath.push(ref);
     }
-    inRes.json(x);
+    var sql = "INSERT INTO evt.bpr (bpr) SELECT $1";
+    console.log(JSON.stringify(x));
+    Postgres.FirstRow(sql,[JSON.stringify(x)], inRes);
 });
 
 //add ledger array and create offset account for total of all lines
