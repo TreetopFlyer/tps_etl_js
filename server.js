@@ -54,8 +54,11 @@ server.get("/source", function (inReq, inRes)
 //returns message about status and error description
 server.post("/source", bodyParser.json(), function (inReq, inRes)// remove body parsing, just pass post body to the sql string build
 {
-    var sql = "SELECT x.message FROM tps.srce_set($1::jsonb) as x(message)";
-    Postgres.FirstRow(sql,[JSON.stringify(inReq.body)], inRes);
+    x = inReq.body;
+    for (var i =0; i < x.length; i++) {
+        var sql = "SELECT x.message FROM tps.srce_set($1::jsonb) as x(message)";
+        Postgres.FirstRow(sql,[JSON.stringify(x[i])], inRes);
+    }
 });
 
 //----------------------------------------------------------regex instrUctions-------------------------------------------------------------------------------------------------------------------------
