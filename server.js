@@ -62,7 +62,7 @@ server.post("/source", bodyParser.json(), function (inReq, inRes)// remove body 
 {
     x = inReq.body;
     var sql =   "SELECT\
-                    jsonb_agg(jsonb_build_object('name',d.def->>'name')||x.message) \
+                    jsonb_agg(jsonb_build_object('name',d.def->>'name')||x.message) top_message \
                 FROM\
                     jsonb_array_elements($1::jsonb) d(def)\
                     JOIN LATERAL tps.srce_set(d.def) x(message) ON TRUE";
