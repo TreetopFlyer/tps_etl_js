@@ -52,13 +52,12 @@ server.get("/source", function (inReq, inRes)
     Postgres.FirstRow(sql,[], inRes);
 });
 //returns message about status and error description
-server.post("/sourc_single", bodyParser.json(), function (inReq, inRes)// remove body parsing, just pass post body to the sql string build
+server.post("/source_single", bodyParser.json(), function (inReq, inRes)// remove body parsing, just pass post body to the sql string build
 {
-    for (var i =0; i < x.length; i++) {
-        var sql = "SELECT x.message FROM tps.srce_set($1::jsonb) as x(message)";
-    }
-    Postgres.FirstRow(sql,inReq.body, inRes);
+    var sql = "SELECT x.message FROM tps.srce_set($1::jsonb) as x(message)";
+    Postgres.FirstRow(sql,[JSON.stringify(inReq.body)], inRes);
 });
+//assume inboud info is json array of definitions to set
 server.post("/source", bodyParser.json(), function (inReq, inRes)// remove body parsing, just pass post body to the sql string build
 {
     x = inReq.body;
@@ -67,7 +66,7 @@ server.post("/source", bodyParser.json(), function (inReq, inRes)// remove body 
                 FROM\
                     jsonb_array_elements($1::jsonb) d(def)\
                     JOIN LATERAL tps.srce_set(d.def) x(message) ON TRUE";
-    Postgres.FirstRow(sql,[JSON.stringify(x[i])], inRes);
+    Postgres.FirstRow(sql,[JSON.stringify(inReq.body)], inRes);
 });
 
 //----------------------------------------------------------regex instrUctions-------------------------------------------------------------------------------------------------------------------------
