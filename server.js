@@ -61,11 +61,8 @@ server.post("/source_single", bodyParser.json(), function (inReq, inRes)// remov
 server.post("/source", bodyParser.json(), function (inReq, inRes)// remove body parsing, just pass post body to the sql string build
 {
     x = inReq.body;
-    var sql =   "SELECT\
-                    jsonb_agg(jsonb_build_object('name',d.def->>'name')||x.message) top_message \
-                FROM\
-                    jsonb_array_elements($1::jsonb) d(def)\
-                    JOIN LATERAL tps.srce_set(d.def) x(message) ON TRUE";
+    var sql =   "SELECT x.message FROM tps.srce_overwrite_all($1::jsonb) x(message)";
+    console.log(JSON.stringify(inReq.body));
     Postgres.FirstRow(sql,[JSON.stringify(inReq.body)], inRes);
 });
 
